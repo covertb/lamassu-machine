@@ -395,7 +395,7 @@ function setCryptoBuy (coin) {
 function setCryptoSell (coin) {
   const cashOut = $('.cash-out')
   const translatedCoin = locale.translate(coin.display).fetch()
-  const sellStr = locale.translate('Sell<br/>%s').fetch(translatedCoin)
+  const sellStr = locale.translate('Return<br/>%s').fetch(translatedCoin)
 
   cashOut.html(sellStr)
 }
